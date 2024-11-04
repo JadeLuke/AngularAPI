@@ -1,0 +1,46 @@
+/* table{
+    background-color: yellow;
+    font-weight: 800;
+}
+:host{
+    background-color: violet;
+    display: block;
+    height: 100vh;
+}
+td{
+    background-color: greenyellow;
+}
+img{
+    height: 120px;
+} */
+:host{
+    background-color: red;
+}
+.text {
+    color: blue;
+}
+.font {
+    font-weight: 800;
+    
+}
+.main{
+    border: solid red;
+    /* text-align: center; */
+}
+img{
+    height: 140px;
+ /* text-align: center; */
+ margin-left: auto;
+ margin-right: auto;
+    /* width: 90px; */
+}
+.cards{
+    width: 300px;
+    height: 200px;
+}
+.countries{
+    text-align: center;
+}
+h5{
+    font-size: 15px;
+}

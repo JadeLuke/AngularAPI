@@ -1,0 +1,96 @@
+<!-- <div style="font-weight: bolder; font-size: 31px; color: red;">ID: {{info.id}}</div>
+<div>Title: {{info.title}}</div>
+<div>Completed: {{info.completed}}</div>
+<div>ID: {{data.id}}</div>
+<div>Title: {{data.title}}</div>
+<div>Price: {{data.price}}</div>
+<div>Category: {{data.category}}</div> -->
+
+<!-- <h1>Table</h1>
+<table border="0">
+  <th>ID</th>
+  <th>Title</th>
+  <th>Price</th>
+  <th>Category</th>
+  <th>Description</th>
+  <th>Completed</th>
+  <th>img</th>
+  <th>Rating</th>
+  <tr> -->
+    <!-- <td>{{data.id}}</td> -->
+    <!-- <td>{{info.capital}}</td> -->
+    <!-- <td>{{data.price}}</td> -->
+    <!-- <td>{{data.category}}</td> -->
+    <!-- <td>{{data.description}}</td> -->
+    <!-- <td>{{data.image}}</td> -->
+    <!-- <td></td> -->
+<!-- <td><img alt="item" [src]="itemImageUrl"></td> -->
+<!-- <td>{{data.rating.rate}} {{data.rating.count}}</td> -->
+
+<!-- 
+  </tr>
+  <tr>
+<td>{{info.id}}</td>
+<td>{{info.title}}</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>{{info.completed}}</td>
+
+
+  </tr> -->
+
+
+  <div class="main flex flex-wrap">
+  @for(item of items; track item){
+
+    <div
+    class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-auto mt-20 cards "
+    >
+    <div class="p-5">
+    <div class="countries">
+    <!-- <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">  -->
+    <!-- {{item.flags.png}} -->
+    <div class="images">
+    <img [src]="item.flags.png" alt="">
+    </div>
+    <!-- </p> -->
+    <div class="title">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" >
+       {{ item?.name.common }}
+   
+       </h5>
+   
+   </div>
+    </div>
+    </div>
+    
+    
+    </div>
+    
+    }
+    </div>
+
+
+<!-- </table>  -->
+<!-- <img alt="item" [src]="itemImageUrl"> -->
+<!-- <div *ngFor="let data of data">
+  <img src="{{data.image}}" />
+</div> -->
+<!-- 
+<p>{{info.region}}</p>
+<p>{{data.price}}</p>
+<p>sicas</p> -->
+<!-- 
+<ul>
+  @for(item of items; track item){
+    <li>{{item.name.common}}</li>
+    <li>{{item.name.official}}</li> -->
+  
+  
+<!-- </ul>  -->
+
+
+
+<!-- <div [ngClass]="textClass">Hello</div> -->
+<router-outlet />
